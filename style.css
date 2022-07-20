@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@500&family=Righteous&family=Rubik+Moonrocks&display=swap");
+
 html {
   box-sizing: border-box;
 }
@@ -6,7 +7,7 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: "Exo 2", sans-serif;
+  font-family: "Righteous", cursive;
   background-color: whitesmoke;
 }
 
@@ -14,8 +15,8 @@ h1 {
   text-align: center;
   margin-top: 24px;
   margin-bottom: 16px;
-  font-size: 40px;
-  letter-spacing: 6px;
+  font-size: 48px;
+  letter-spacing: 2px;
 }
 
 /* Loader */
@@ -35,4 +36,27 @@ h1 {
   left: 50%;
   /* Center image to center of the page */
   transform: translate(-50%, -50%);
+}
+
+/* Image Container*/
+
+.image-container {
+  margin: 10px 30%;
+}
+
+.image-container img {
+  width: 100%;
+  margin-top: 6px;
+}
+
+/* Media Query: Large Smartphome */
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 16px;
+  }
+
+  .image-container {
+    margin: 10px;
+  }
 }
